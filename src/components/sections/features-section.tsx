@@ -53,7 +53,7 @@ export function FeaturesSection() {
             </div>
 
             <a
-              href="https://wa.me/+237650279923?text=Bonjour%2C%20je%20suis%20int%C3%A9ress%C3%A9%28e%29%20par%20l'offre%20de%20site%20web%20%C3%A0%20119%2C000%20FCFA."
+              href="https://wa.me/+237671842727?text=Bonjour%2C%20je%20suis%20int%C3%A9ress%C3%A9%28e%29%20par%20l'offre%20de%20site%20web%20%C3%A0%20119%2C000%20FCFA."
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 text-primary font-semibold text-sm sm:text-base hover:underline underline-offset-4"
@@ -98,7 +98,7 @@ export function FeaturesSection() {
               </div>
 
               <a
-                href="https://wa.me/+237650279923?text=Bonjour%2C%20je%20suis%20int%C3%A9ress%C3%A9%28e%29%20par%20l'offre%20de%20site%20web%20%C3%A0%20119%2C000%20FCFA."
+                href="https://wa.me/+237671842727?text=Bonjour%2C%20je%20suis%20int%C3%A9ress%C3%A9%28e%29%20par%20l'offre%20de%20site%20web%20%C3%A0%20119%2C000%20FCFA."
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center justify-center gap-2 w-full bg-primary text-primary-foreground py-3 sm:py-4 rounded-lg sm:rounded-xl font-semibold text-sm sm:text-base lg:text-lg hover:bg-primary/90 transition-colors"

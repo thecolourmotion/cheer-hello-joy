@@ -19,7 +19,7 @@ export function HeroSection() {
             <img
               src={tcmLogo}
               alt="The Colour Motion"
-              className="h-8 sm:h-10 md:h-12 w-auto brightness-0 invert"
+              className="h-14 sm:h-16 md:h-20 w-auto brightness-0 invert"
             />
           </motion.div>
 

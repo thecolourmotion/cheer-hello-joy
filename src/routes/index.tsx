@@ -6,6 +6,8 @@ import { FeaturesSection } from "@/components/sections/features-section";
 import { TestimonialsSection } from "@/components/sections/testimonials-section";
 import { CtaSection } from "@/components/sections/cta-section";
 import { Footer } from "@/components/sections/footer";
+import { LanguageSwitcher } from "@/components/language-switcher";
+
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -30,7 +32,9 @@ export const Route = createFileRoute("/")({
 function Home() {
   return (
     <main className="min-h-screen overflow-x-hidden">
+      <LanguageSwitcher />
       <HeroSection />
+
       <MarqueeSection />
       <WhyWebsiteSection />
       <FeaturesSection />

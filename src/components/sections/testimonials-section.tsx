@@ -1,13 +1,11 @@
 import { motion } from "framer-motion";
 import { Star } from "lucide-react";
-
-const testimonials = [
-  { name: "Mariam N.", role: "Restaurant Owner", content: "My restaurant now gets 3x more reservations since we got our website. Best investment I made!", rating: 5 },
-  { name: "Paul T.", role: "Boutique Owner", content: "Customers find us on Google now. The team delivered exactly what they promised, on time.", rating: 5 },
-  { name: "Carine A.", role: "Event Planner", content: "Professional, fast, and affordable. My website looks like it cost 5x more. Highly recommend!", rating: 5 },
-];
+import { useLanguage } from "@/i18n/LanguageContext";
 
 export function TestimonialsSection() {
+  const { t } = useLanguage();
+  const testimonials = t.testimonials.items.map((it) => ({ ...it, rating: 5 }));
+
   return (
     <section className="py-16 sm:py-20 md:py-24 lg:py-32 px-4 sm:px-6 md:px-12 lg:px-20">
       <div className="max-w-7xl mx-auto">
@@ -19,11 +17,11 @@ export function TestimonialsSection() {
           className="text-center mb-10 sm:mb-12 md:mb-16"
         >
           <p className="text-primary font-medium text-xs sm:text-sm tracking-widest uppercase mb-3 sm:mb-4">
-            Testimonials
+            {t.testimonials.kicker}
           </p>
           <h2 className="font-display text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold tracking-tight">
-            Trusted by<br />
-            <span className="text-muted-foreground">business owners like you</span>
+            {t.testimonials.title1}<br />
+            <span className="text-muted-foreground">{t.testimonials.title2}</span>
           </h2>
         </motion.div>
 

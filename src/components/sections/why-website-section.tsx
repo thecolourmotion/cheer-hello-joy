@@ -1,14 +1,13 @@
 import { motion } from "framer-motion";
 import { Globe, TrendingUp, Users, Shield } from "lucide-react";
+import { useLanguage } from "@/i18n/LanguageContext";
 
-const reasons = [
-  { icon: Globe, title: "24/7 Visibility", description: "Your business never sleeps. Reach customers anytime, anywhere in the world." },
-  { icon: TrendingUp, title: "Boost Credibility", description: "93% of consumers research online before buying. Be where they look." },
-  { icon: Users, title: "Reach More People", description: "Expand beyond local limits. Your website is your global storefront." },
-  { icon: Shield, title: "Build Trust", description: "A professional website signals that you take your business seriously." },
-];
+const icons = [Globe, TrendingUp, Users, Shield];
 
 export function WhyWebsiteSection() {
+  const { t } = useLanguage();
+  const reasons = t.why.reasons.map((r, i) => ({ ...r, icon: icons[i] }));
+
   return (
     <section className="py-16 sm:py-20 md:py-24 lg:py-32 px-4 sm:px-6 md:px-12 lg:px-20">
       <div className="max-w-7xl mx-auto">
@@ -20,11 +19,11 @@ export function WhyWebsiteSection() {
           className="text-center mb-10 sm:mb-14 md:mb-16 lg:mb-20"
         >
           <p className="text-primary font-medium text-xs sm:text-sm tracking-widest uppercase mb-3 sm:mb-4">
-            Why A Website?
+            {t.why.kicker}
           </p>
           <h2 className="font-display text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold tracking-tight">
-            Still thinking?<br />
-            <span className="text-muted-foreground">Here&apos;s why you need one.</span>
+            {t.why.title1}<br />
+            <span className="text-muted-foreground">{t.why.title2}</span>
           </h2>
         </motion.div>
 

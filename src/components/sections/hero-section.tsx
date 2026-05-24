@@ -1,5 +1,7 @@
 import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
+import tcmLogo from "@/assets/tcm-logo.png";
+
 
 export function HeroSection() {
   return (
@@ -7,18 +9,22 @@ export function HeroSection() {
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[400px] sm:w-[600px] md:w-[800px] h-[400px] sm:h-[600px] md:h-[800px] bg-primary/5 rounded-full blur-3xl pointer-events-none" />
 
       <nav className="absolute top-0 left-0 right-0 z-50 px-4 py-4 sm:px-6 sm:py-6 md:px-12 lg:px-20">
-        <div className="flex items-center justify-between">
+        <div className="flex items-center justify-center sm:justify-between">
           <motion.div
             initial={{ opacity: 0, x: -20 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.6 }}
-            className="font-display text-lg sm:text-xl md:text-2xl font-bold tracking-tight"
+            className="flex items-center"
           >
-            The Colour Motion
+            <img
+              src={tcmLogo}
+              alt="The Colour Motion"
+              className="h-8 sm:h-10 md:h-12 w-auto brightness-0 invert"
+            />
           </motion.div>
 
           <motion.a
-            href="https://wa.me/+237671842727?text=Bonjour%20The%20Colour%20Motion%2C%20je%20suis%20int%C3%A9ress%C3%A9(e)%20par%20l%27offre%20de%20cr%C3%A9ation%20de%20site%20web%20%C3%A0%20119%2C000%20FCFA."
+            href="https://wa.me/+237671842727?text=Hello%20The%20Colour%20Motion%2C%20I'm%20interested%20in%20your%20website%20offer%20at%20119%2C000%20FCFA."
             target="_blank"
             rel="noopener noreferrer"
             initial={{ opacity: 0, x: 20 }}
@@ -31,6 +37,7 @@ export function HeroSection() {
           </motion.a>
         </div>
       </nav>
+
 
       <div className="relative z-10 px-4 sm:px-6 md:px-12 lg:px-20 pt-24 sm:pt-28 md:pt-32 pb-16 sm:pb-20">
         <motion.div
@@ -96,7 +103,7 @@ export function HeroSection() {
           className="flex justify-center px-2"
         >
           <motion.a
-            href="https://wa.me/+237671842727?text=Bonjour%20The%20Colour%20Motion%2C%20je%20suis%20int%C3%A9ress%C3%A9(e)%20par%20l%27offre%20de%20cr%C3%A9ation%20de%20site%20web%20%C3%A0%20119%2C000%20FCFA."
+            href="https://wa.me/+237671842727?text=Hello%20The%20Colour%20Motion%2C%20I'm%20interested%20in%20your%20website%20offer%20at%20119%2C000%20FCFA."
             target="_blank"
             rel="noopener noreferrer"
             animate={{ scale: [1, 1.05, 1] }}

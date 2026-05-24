@@ -26,7 +26,7 @@ export function CtaSection() {
           </p>
 
           <a
-            href="https://wa.me/+237650279923?text=Bonjour%2C%20je%20suis%20int%C3%A9ress%C3%A9%28e%29%20par%20l'offre%20de%20site%20web%20%C3%A0%20119%2C000%20FCFA."
+            href="https://wa.me/+237650279923?text=Hello%2C%20I'm%20interested%20in%20your%20website%20offer%20at%20119%2C000%20FCFA."
             target="_blank"
             rel="noopener noreferrer"
             className="group w-full sm:w-auto inline-flex items-center justify-center gap-2 sm:gap-3 bg-foreground text-background px-6 sm:px-8 lg:px-10 py-3.5 sm:py-4 lg:py-5 rounded-full font-semibold text-sm sm:text-base lg:text-lg hover:bg-primary hover:text-primary-foreground transition-all duration-300"

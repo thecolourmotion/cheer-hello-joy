@@ -1,12 +1,8 @@
+import { useLanguage } from "@/i18n/LanguageContext";
+
 export function MarqueeSection() {
-  const items = [
-    "MODERN DESIGN",
-    "FAST DELIVERY",
-    "MOBILE RESPONSIVE",
-    "SEO OPTIMIZED",
-    "24/7 SUPPORT",
-    "100% SATISFACTION",
-  ];
+  const { t } = useLanguage();
+  const items = t.marquee;
 
   return (
     <section className="py-4 sm:py-6 md:py-8 border-y border-border overflow-hidden">

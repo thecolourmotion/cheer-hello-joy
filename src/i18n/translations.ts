@@ -1,6 +1,19 @@
 export type Language = "en" | "fr";
 
-export const translations = {
+interface TranslationShape {
+  nav: { contact: string };
+  hero: { badge: string; badgeAccent: string; title1: string; title2: string; title3: string; subtitle: string; cta: string; whatsapp: string };
+  marquee: string[];
+  why: { kicker: string; title1: string; title2: string; reasons: { title: string; description: string }[] };
+  features: { kicker: string; title1: string; title2: string; subtitle: string; list: string[]; getStarted: string; bestValue: string; packageLabel: string; oneTime: string; moreFeatures: string; claim: string };
+  testimonials: { kicker: string; title1: string; title2: string; items: { name: string; role: string; content: string }[] };
+  cta: { pill: string; title1: string; title2: string; subtitle: string; button: string; footnote: string };
+  footer: { brand: string; tagline: string; rights: string };
+}
+
+
+
+export const translations: Record<Language, TranslationShape> = {
   en: {
     nav: { contact: "Contact" },
     hero: {

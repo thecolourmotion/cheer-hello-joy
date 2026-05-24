@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
 import tcmLogo from "@/assets/tcm-logo.png";
 import { useLanguage } from "@/i18n/LanguageContext";
+import { LanguageSwitcher } from "@/components/language-switcher";
 
 export function HeroSection() {
   const { t } = useLanguage();
@@ -26,18 +27,9 @@ export function HeroSection() {
             />
           </motion.div>
 
-          <motion.a
-            href={waHref}
-            target="_blank"
-            rel="noopener noreferrer"
-            initial={{ opacity: 0, x: 20 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.6 }}
-            className="hidden sm:flex items-center gap-2 bg-foreground text-background px-4 py-2 sm:px-6 sm:py-3 rounded-full font-medium text-xs sm:text-sm hover:bg-primary hover:text-primary-foreground transition-colors duration-300"
-          >
-            {t.nav.contact}
-            <ArrowRight className="w-3 h-3 sm:w-4 sm:h-4" />
-          </motion.a>
+          <div className="hidden sm:block">
+            <LanguageSwitcher inline />
+          </div>
         </div>
       </nav>
 

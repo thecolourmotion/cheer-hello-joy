@@ -7,7 +7,7 @@ const options: { code: Language; label: string }[] = [
   { code: "fr", label: "FR" },
 ];
 
-export function LanguageSwitcher() {
+export function LanguageSwitcher({ inline = false }: { inline?: boolean }) {
   const { language, setLanguage } = useLanguage();
 
   return (
@@ -15,7 +15,7 @@ export function LanguageSwitcher() {
       initial={{ opacity: 0, y: -10 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5, delay: 0.2 }}
-      className="fixed top-3 right-3 sm:top-5 sm:right-5 z-[60]"
+      className={inline ? "" : "fixed top-3 right-3 sm:hidden z-[60]"}
     >
       <div className="relative flex items-center gap-1 p-1 rounded-full border border-border bg-background/60 backdrop-blur-md shadow-lg">
         {options.map((opt) => {

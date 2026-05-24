@@ -176,6 +176,6 @@ export const translations: Record<Language, TranslationShape> = {
       rights: "2026 The Colour Motion. Tous droits réservés.",
     },
   },
-} as const;
+};
 
-export type Translation = (typeof translations)["en"];
+export type Translation = TranslationShape;

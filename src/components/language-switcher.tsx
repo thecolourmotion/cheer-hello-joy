@@ -31,7 +31,7 @@ export function LanguageSwitcher({ inline = false }: { inline?: boolean }) {
             >
               {active && (
                 <motion.span
-                  layoutId="lang-pill"
+                  layoutId={inline ? "lang-pill-inline" : "lang-pill-mobile"}
                   className="absolute inset-0 rounded-full bg-primary"
                   transition={{ type: "spring", stiffness: 400, damping: 30 }}
                 />

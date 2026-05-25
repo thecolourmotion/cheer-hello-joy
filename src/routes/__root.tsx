@@ -84,8 +84,8 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { name: "twitter:site", content: "@Lovable" },
       { name: "twitter:title", content: "Affordable Professional Websites for Businesses" },
       { name: "twitter:description", content: "Professional and affordable websites for businesses, startups, and personal brands. Responsive, modern, and built to convert visitors into customers." },
-      { property: "og:image", content: "https://storage.googleapis.com/gpt-engineer-file-uploads/dCjeEtLhXLVxYCeEDhMKH0LeHuJ2/social-images/social-1779729015628-Social_Image.webp" },
-      { name: "twitter:image", content: "https://storage.googleapis.com/gpt-engineer-file-uploads/dCjeEtLhXLVxYCeEDhMKH0LeHuJ2/social-images/social-1779729015628-Social_Image.webp" },
+      { property: "og:image", content: "https://storage.googleapis.com/gpt-engineer-file-uploads/dCjeEtLhXLVxYCeEDhMKH0LeHuJ2/social-images/social-1779729415223-Social_Image.webp" },
+      { name: "twitter:image", content: "https://storage.googleapis.com/gpt-engineer-file-uploads/dCjeEtLhXLVxYCeEDhMKH0LeHuJ2/social-images/social-1779729415223-Social_Image.webp" },
     ],
     links: [
       { rel: "preconnect", href: "https://fonts.googleapis.com" },

@@ -84,8 +84,8 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { name: "twitter:site", content: "@Lovable" },
       { name: "twitter:title", content: "Affordable Professional Websites for Businesses" },
       { name: "twitter:description", content: "Professional and affordable websites for businesses, startups, and personal brands. Responsive, modern, and built to convert visitors into customers." },
-      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/76cf8f78-653c-4701-8dcb-78e1a195b615/id-preview-f5c7f3a3--4e420131-7c1f-4ace-8102-106061f55a94.lovable.app-1779659521966.png" },
-      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/76cf8f78-653c-4701-8dcb-78e1a195b615/id-preview-f5c7f3a3--4e420131-7c1f-4ace-8102-106061f55a94.lovable.app-1779659521966.png" },
+      { property: "og:image", content: "https://storage.googleapis.com/gpt-engineer-file-uploads/dCjeEtLhXLVxYCeEDhMKH0LeHuJ2/social-images/social-1779729015628-Social_Image.webp" },
+      { name: "twitter:image", content: "https://storage.googleapis.com/gpt-engineer-file-uploads/dCjeEtLhXLVxYCeEDhMKH0LeHuJ2/social-images/social-1779729015628-Social_Image.webp" },
     ],
     links: [
       { rel: "preconnect", href: "https://fonts.googleapis.com" },
